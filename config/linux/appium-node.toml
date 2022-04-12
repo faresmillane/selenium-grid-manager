@@ -1,0 +1,14 @@
+[server]
+#port = 5555
+
+[node]
+detect-drivers = false
+
+[relay]
+# Default Appium server endpoint
+url = "http://localhost:4723/wd/hub"
+status-endpoint = "/status"
+
+configs = [
+  "1", "{\"browserName\": \"chrome\", \"platformName\": \"android\", \"appium:platformVersion\": \"11\"}"
+]

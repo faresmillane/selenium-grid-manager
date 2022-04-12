@@ -1,0 +1,18 @@
+{
+  "name": "selenium-grid-manager",
+  "version": "1.0.0",
+  "description": "manage selenium server",
+  "scripts": {
+    "selenium:start": "node ./lib/start.js",
+    "selenium:restart": "node ./lib/restart.js",
+    "appium:start": "./node_modules/.bin/appium",
+    "selenium:install": "node ./lib/install.js"
+  },
+  "author": "fares.millane",
+  "license": "ISC",
+  "bin": "./bin/cli.js",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "fs-extra": "^10.0.1"
+  }
+}
