@@ -2,13 +2,13 @@
 
 if [ "$3" = ".tar.gz" ]; 
     then
-        curl -LkSs $1 --output tmp/$2.tar.gz
+        curl -LkSs $1 --output $4tmp/$2.tar.gz
         pwd
         ls
-        tar -xf tmp/$2.tar.gz -C drivers
+        tar -xf $4tmp/$2.tar.gz -C $4drivers
     else
-        curl -LkSs $1 --output tmp/$2.zip
+        curl -LkSs $1 --output $4tmp/$2.zip
         pwd
         ls
-        unzip tmp/$2.zip -d drivers
+        unzip $4tmp/$2.zip -d $4drivers
 fi

@@ -6,5 +6,5 @@ detect-drivers = false
 [[node.driver-configuration]]
 display-name = "Firefox node"
 stereotype = "{\"browserName\": \"firefox\"}"
-max-sessions = 5
-webdriver-executable = './drivers/geckodriver.exe'
+max-sessions = 8
+#webdriver-executable = './drivers/geckodriver'

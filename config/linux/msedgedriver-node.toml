@@ -7,4 +7,4 @@ detect-drivers = false
 display-name = "Edge node"
 stereotype = "{\"browserName\": \"MicrosoftEdge\"}"
 max-sessions = 5
-webdriver-executable = './drivers/msedgedriver.exe'
+#webdriver-executable = './drivers/msedgedriver'

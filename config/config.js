@@ -1,31 +1,29 @@
+
 module.exports = {
     hostname: "http://localhost",
     hubPort: 4444,
     ports: [4444, 4445, 4446, 4447, 4448, 4723],
     nodes: [
         {
-            driverName: 'chrome',
+            driverName: 'chromedriver',
             active: true,
             port: 4445,
+            sessions: 6
         },
         {
-            driverName: 'firefox',
+            driverName: 'geckodriver',
             active: true,
             port: 4446,
+            sessions: 4
         },
         {
-            driverName: 'edge',
+            driverName: 'msedgedriver',
             active: true,
             port: 4447,
-        },
-        {
-            driverName: 'appium',
-            active: false,
-            port: 4448,
-        },
+            sessions: 4
+        }
     ],
     update: {
-        selenium: 'https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.1.0/selenium-server-4.1.3.jar',
         chromedriver: {
             windows: 'https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_win32.zip',
             linux: 'https://chromedriver.storage.googleapis.com/100.0.4896.60/chromedriver_linux64.zip',
@@ -38,5 +36,6 @@ module.exports = {
             windows: 'https://msedgedriver.azureedge.net/100.0.1185.36/edgedriver_win32.zip',
             linux: 'https://msedgedriver.azureedge.net/100.0.1185.36/edgedriver_linux64.zip'
         }
-    }
+    },
+    path: './node_modules/selenium-grid-manager/'
 };
