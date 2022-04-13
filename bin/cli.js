@@ -1,13 +1,13 @@
+#! /usr/bin/env node
 const args = process.argv;
-const { exec } = require('child_process');
-const { stdout } = require('process');
+const server = require("./../lib/server");
+const drivers = require("./../lib/install");
+const selenium = require("./../lib/restart");
 
 if(args[2] === 'install') {
-    exec(`node lib/install`);
+    drivers.install();
 } else if (args[2] === 'start') {
-    exec(`node lib/start`, (error, stdout) => {
-        console.info(stdout);
-    })
+    server.start();
 } else if (args[2] === 'restart') {
-    exec(`node lib/restart`);
+    selenium.restart();
 };
