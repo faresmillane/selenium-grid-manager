@@ -17,7 +17,7 @@ Before starting the selenium server, configure your package.json and download th
 
 ```
  "scripts": {
-    "selenium:server": "node ./bin/cli.js"
+    "selenium:server": "./node_modules/.bin/selenium",
  }
 ```
 
