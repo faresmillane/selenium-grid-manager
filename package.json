@@ -1,6 +1,6 @@
 {
   "name": "selenium-grid-manager",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "manage selenium server",
   "scripts": {
     "selenium:server": "node ./bin/cli.js"

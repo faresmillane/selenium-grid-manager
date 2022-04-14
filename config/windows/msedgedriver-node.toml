@@ -1,10 +1,8 @@
 [server]
-#port = 4446
 
 [node]
 detect-drivers = false
 [[node.driver-configuration]]
 display-name = "Edge node"
 stereotype = "{\"browserName\": \"MicrosoftEdge\"}"
-max-sessions = 5
-#webdriver-executable = './drivers/msedgedriver.exe'
+max-sessions=1
