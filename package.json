@@ -1,6 +1,6 @@
 {
   "name": "selenium-grid-manager",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "manage selenium server",
   "scripts": {
     "selenium:server": "node ./bin/cli.js"
@@ -15,11 +15,10 @@
     "fs-extra": "^10.0.1"
   },
   "keywords": [
-    "test",
-    "webdriver",
-    "webdriverjs",
     "selenium",
-    "selenium-webdriver"
+    "selenium-webdriver",
+    "test",
+    "webdriver"
   ],
   "repository": {
     "type": "git",

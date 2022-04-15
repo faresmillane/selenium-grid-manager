@@ -5,4 +5,5 @@ detect-drivers = false
 [[node.driver-configuration]]
 display-name = "Edge node"
 stereotype = "{\"browserName\": \"MicrosoftEdge\"}"
-max-sessions=1
+max-sessions=8
+webdriver-executable=""

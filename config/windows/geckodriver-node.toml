@@ -1,8 +1,0 @@
-[server]
-
-[node]
-detect-drivers = false
-[[node.driver-configuration]]
-display-name = "Firefox node"
-stereotype = "{\"browserName\": \"firefox\"}"
-max-sessions=1
