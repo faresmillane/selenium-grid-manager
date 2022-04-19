@@ -1,5 +1,4 @@
 #!/bin/bash
-
 if [ "$3" = ".tar.gz" ]; 
     then
         curl -LkSs $1 --output $4tmp/$2.tar.gz
