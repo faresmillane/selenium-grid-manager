@@ -9,10 +9,10 @@ module.exports = {
     hubPort: selenium.hubPort,
     ports: [
         selenium.hubPort, 
-        selenium.chrome.port, 
-        selenium.firefox.port, 
-        selenium.edge.port, 
-        selenium.safari.port
+        4445, 
+        4446, 
+        4447, 
+        4448
     ],
     nodes: [
         {
@@ -20,7 +20,7 @@ module.exports = {
             driverName: 'chromedriver',
             version: selenium.chrome.version,
             active: selenium.chrome.isActive === false ? selenium.chrome.isActive : true,
-            port: selenium.chrome.port,
+            port: 4445,
             sessions: selenium.chrome.maxSessions ? selenium.chrome.maxSessions : 8
         },
         {
@@ -28,7 +28,7 @@ module.exports = {
             driverName: 'geckodriver',
             version: selenium.firefox.version,
             active: selenium.firefox.isActive === false ? selenium.firefox.isActive : true,
-            port: selenium.firefox.port,
+            port: 4446,
             sessions: selenium.firefox.maxSessions ? selenium.firefox.maxSessions : 8
         },
         {
@@ -36,7 +36,7 @@ module.exports = {
             driverName: 'msedgedriver',
             version: selenium.edge.version,
             active: selenium.edge.isActive === false ? selenium.edge.isActive : true,
-            port: selenium.edge.port,
+            port: 4447,
             sessions: selenium.edge.maxSessions ? selenium.edge.maxSessions : 8
         },
         {
@@ -44,7 +44,7 @@ module.exports = {
             driverName: 'safaridriver',
             version: selenium.safari.version,
             active: selenium.safari.isActive === false ? selenium.safari.isActive : true,
-            port: selenium.safari.port,
+            port: 4448,
             sessions: selenium.safari.maxSessions ? selenium.safari.maxSessions : 8
         }
     ],

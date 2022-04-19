@@ -1,8 +1,7 @@
 #! /usr/bin/env node
 const args = process.argv;
-const server = require("./../lib/server");
 const drivers = require("./../lib/install");
-const selenium = require("./../lib/restart");
+const selenium = require("../lib/run");
 const clean = require("./../lib/clear");
 
 if(args[2] === 'install') {
@@ -10,7 +9,7 @@ if(args[2] === 'install') {
 } else if (args[2] === 'reinstall') {
     drivers.install();
 } else if (args[2] === 'start') {
-    server.start();
+    selenium.start();
 } else if (args[2] === 'restart') {
     selenium.restart();
 } else if (args[2] === 'clean') {
