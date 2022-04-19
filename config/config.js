@@ -6,9 +6,9 @@ const selenium = require(`${seleniumPath}selenium-config`);
 
 module.exports = {
     hostname: "http://localhost",
-    hubPort: selenium.hub_port,
+    hubPort: selenium.hubPort,
     ports: [
-        selenium.hub_port, 
+        selenium.hubPort, 
         selenium.chrome.port, 
         selenium.firefox.port, 
         selenium.edge.port, 
@@ -18,30 +18,34 @@ module.exports = {
         {
             browserName: 'chrome',
             driverName: 'chromedriver',
-            active: selenium.chrome.is_active === false ? selenium.chrome.is_active : true,
+            version: selenium.chrome.version,
+            active: selenium.chrome.isActive === false ? selenium.chrome.isActive : true,
             port: selenium.chrome.port,
-            sessions: selenium.chrome.max_sessions ? selenium.chrome.max_sessions : 8
+            sessions: selenium.chrome.maxSessions ? selenium.chrome.maxSessions : 8
         },
         {
             browserName: 'firefox',
             driverName: 'geckodriver',
-            active: selenium.firefox.is_active === false ? selenium.firefox.is_active : true,
+            version: selenium.firefox.version,
+            active: selenium.firefox.isActive === false ? selenium.firefox.isActive : true,
             port: selenium.firefox.port,
-            sessions: selenium.firefox.max_sessions ? selenium.firefox.max_sessions : 8
+            sessions: selenium.firefox.maxSessions ? selenium.firefox.maxSessions : 8
         },
         {
             browserName: 'MicrosoftEdge',
             driverName: 'msedgedriver',
-            active: selenium.edge.is_active === false ? selenium.edge.is_active : true,
+            version: selenium.edge.version,
+            active: selenium.edge.isActive === false ? selenium.edge.isActive : true,
             port: selenium.edge.port,
-            sessions: selenium.edge.max_sessions ? selenium.edge.max_sessions : 8
+            sessions: selenium.edge.maxSessions ? selenium.edge.maxSessions : 8
         },
         {
             browserName: 'Safari',
             driverName: 'safaridriver',
-            active: selenium.safari.is_active === false ? selenium.safari.is_active : true,
+            version: selenium.safari.version,
+            active: selenium.safari.isActive === false ? selenium.safari.isActive : true,
             port: selenium.safari.port,
-            sessions: selenium.safari.max_sessions ? selenium.safari.max_sessions : 8
+            sessions: selenium.safari.maxSessions ? selenium.safari.maxSessions : 8
         }
     ],
     update: {

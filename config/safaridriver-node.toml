@@ -4,7 +4,7 @@
 detect-drivers = true
 [[node.driver-configuration]]
 display-name = "Safari node"
-stereotype = "{\"browserName\": \"safari\"}"
+stereotype="{\"browserName\": \"safari\"}"
 max-sessions=1
 
 

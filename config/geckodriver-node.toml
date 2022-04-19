@@ -4,6 +4,6 @@
 detect-drivers = false
 [[node.driver-configuration]]
 display-name = "Firefox node"
-stereotype = "{\"browserName\": \"firefox\"}"
+stereotype=""
 max-sessions=8
 webdriver-executable=""
