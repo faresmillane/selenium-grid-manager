@@ -89,7 +89,7 @@ npm run selenium:server restart
 ```
 
 ```
-npm run selenium:server reinstall
+npm run selenium:server update
 ```
 
 ```
